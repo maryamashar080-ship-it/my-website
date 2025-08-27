@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+            color: rgba(0, 0, 0, 0.945);
+        }
+        header{
+            background: #1a0303;
+            color:aliceblue;
+           text-align:center;
+            padding:40px,20px;
+
+        }
+        nav a{margin:0 15px;
+        color:chartreuse;
+        text-decoration: none;
+        font-weight: bold;
+        
+        
+        }
+        .highlight{
+            color:aqua;
+        }
+        section{
+            padding:40px 20px;
+            max-width:800px;
+            margin:auto;
+        }
+        .project-list{
+display:flex;
+flex-direction:column;   
+gap:10px;     }
+.project{
+    background: #fff;
+    padding:20px;
+    border-left:5pc solid rgb(240, 205, 10);
+    box-shadow: 0px 2px 5px rgba(238, 255, 6, 0.315);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+input,textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+
+}
+button{
+    background: goldenrod;
+    color: #ccc;
+    border: none;
+    padding:10px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background: greenyellow;
+}
+footer{
+    text-align: center;
+    background: rgb(93, 104, 91);
+    color:bisque;
+    padding:20px;
+}
+    </style>
+</head>
+<body>
+ <header>
+    <h1>Hello,I'm<span class="highlight">Laiba Ashar</span> </h1>
+    <p>Web Developer|Designer|Creative Thinker</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+ </header>   
+ <section id="about">
+    <h2>About me</h2>
+    <p>
+        I love building clean,responsive websites and solving real-world problems through code.
+    </p>
+ </section>
+     
+ <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+        <div class="project">
+            <h3>
+                Portfolio Website
+            </h3>
+            <p>Build using Html,Css</p>
+        </div>
+        <div class="project">
+            <h3>Calculator </h3>
+            <h3>Simple AI Chatbot</h3>
+            <h3>Food Restraunt Website</h3>
+        </div>
+    </div>
+
+ </section>
+ <section id="Contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <input type="text"placeholder="Your Name="required/>
+        <input type="email"placeholder="Your Email="required/>
+        <textarea placeholder="Your messege"required></textarea>
+        <button type="submit">Send</button>
+
+    </form>
+    <p id="formMessege"></p>
+ </section>
+ <footer>
+    <p>@2025Laiba Ashar</p>
+ </footer>
+</body>
+</html>
